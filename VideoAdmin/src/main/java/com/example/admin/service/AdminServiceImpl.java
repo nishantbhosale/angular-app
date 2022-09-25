@@ -41,6 +41,12 @@ public class AdminServiceImpl implements AdminService {
 		return repo.findById(id);
 	}
 
+	@Override
+	public Optional<Admin> searchByRating(int rating) {
+		// TODO Auto-generated method stub
+		return repo.findById(rating);
+	}
+
 
 
 }
